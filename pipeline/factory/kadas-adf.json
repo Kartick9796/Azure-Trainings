@@ -1,0 +1,9 @@
+{
+	"name": "kadas-adf",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "38bd64b4-68f4-4dc3-b752-32c884388573",
+		"tenantId": "ed4d4b4c-67f7-43e5-a5e8-eb93e339e9da"
+	}
+}

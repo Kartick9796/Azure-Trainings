@@ -1,0 +1,25 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Data practice pipeline",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/kadas1/blobs/",
+			"blobPathEndsWith": "deliveries.parquet",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/b5377641-15f5-4ea2-a724-05f70f153c6f/resourceGroups/kadas-res/providers/Microsoft.Storage/storageAccounts/kadasstorage",
+			"events": [
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}

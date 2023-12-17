@@ -1,0 +1,13 @@
+{
+	"name": "AzureSynapseArtifacts2",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSynapseArtifacts",
+		"typeProperties": {
+			"endpoint": "https://kadas-synapse.dev.azuresynapse.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/b5377641-15f5-4ea2-a724-05f70f153c6f/resourceGroups/kadas-res/providers/Microsoft.Synapse/workspaces/kadas-synapse"
+		}
+	}
+}
