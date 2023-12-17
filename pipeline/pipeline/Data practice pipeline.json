@@ -33,7 +33,7 @@
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "Look_Tables",
+						"activity": "Wait2",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -150,6 +150,22 @@
 				"userProperties": [],
 				"typeProperties": {
 					"waitTimeInSeconds": 15
+				}
+			},
+			{
+				"name": "Wait2",
+				"type": "Wait",
+				"dependsOn": [
+					{
+						"activity": "Look_Tables",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 10
 				}
 			}
 		],
