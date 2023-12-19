@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "kddev-adf"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=kadas-server.database.windows.net;Initial Catalog=kadas-db;User ID=kadas"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://kadasstorage.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "1205-182257-znzv0q59"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://kadas-vlt.vault.azure.net/"
+		},
+		"AzureSynapseArtifacts2_properties_typeProperties_endpoint": {
+			"value": "https://kadas-synapse.dev.azuresynapse.net"
+		},
+		"trigger1_properties_typeProperties_scope": {
+			"value": "/subscriptions/b5377641-15f5-4ea2-a724-05f70f153c6f/resourceGroups/kadas-res/providers/Microsoft.Storage/storageAccounts/kadasstorage"
+		}
+	}
+}
